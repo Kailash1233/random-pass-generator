@@ -35,8 +35,10 @@ const PasswordGenerator = () => {
             max="30"
           />
         </div>
-        <div>
-          <button onClick={handleGeneratePassword}>Generate Password</button>
+        <div className="button-container">
+          <button className="generate-button" onClick={handleGeneratePassword}>
+            Generate Password
+          </button>
         </div>
         {generatedPassword && (
           <div>
