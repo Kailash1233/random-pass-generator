@@ -1,5 +1,7 @@
 #Random Pass Generator App
 
+It is developed to generate Random Passwords. We give how many digits the passwords is and it will give us the Random Password.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
