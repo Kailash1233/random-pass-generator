@@ -21,6 +21,10 @@ const PasswordGenerator = () => {
     setGeneratedPassword(newPassword);
   };
 
+  const handleClearPassword = () => {
+    setGeneratedPassword("");
+  };
+
   return (
     <div className="app-container">
       <div className="password-generator-container">
@@ -39,11 +43,14 @@ const PasswordGenerator = () => {
           <button className="generate-button" onClick={handleGeneratePassword}>
             Generate Password
           </button>
+          <button className="clear-button" onClick={handleClearPassword}>
+            Clear Password
+          </button>
         </div>
         {generatedPassword && (
-          <div>
+          <div className="generated-password-container">
             <h3>Generated Password:</h3>
-            <p>{generatedPassword}</p>
+            <p className="generated-password-text">{generatedPassword}</p>
           </div>
         )}
       </div>
